@@ -5,7 +5,6 @@ module TsvBuddy
   # take_tsv: converts a String with TSV data into @data
   # parameter: tsv - a String in TSV format
   def take_tsv(tsv)
-    @data = []
     tsv_line = tsv.split("\n")
     title = tsv_line[0].split("\t")
     @data = tsv_line [1..].map do |line|
